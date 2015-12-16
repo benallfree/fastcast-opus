@@ -1,0 +1,3 @@
+[submodule "fastcast-opus/novocaine"]
+	path = fastcast-opus/novocaine
+	url = git@github.com:benallfree/novocaine.git
