@@ -75,7 +75,7 @@ int test_overflow(void)
   return 1;
 }
 
-int test_opus_padding_main(void)
+int main(void)
 {
   const char *oversion;
   int tests = 0;;

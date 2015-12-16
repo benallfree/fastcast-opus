@@ -470,7 +470,7 @@ int run_test1(int no_fuzz)
    return 0;
 }
 
-int test_opus_encode_main(int _argc, char **_argv)
+int main(int _argc, char **_argv)
 {
    const char * oversion;
    const char * env_seed;
