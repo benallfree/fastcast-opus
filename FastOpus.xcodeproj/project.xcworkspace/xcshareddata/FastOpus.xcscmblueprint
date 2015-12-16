@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "13430B4F35FA856E39F30A4ABE89A539F93FF555" : 0,
+    "409A2EF878654D92A18DAC2E7D8CC80F9178683D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B38DECC2-B2AE-40F2-8877-C38352991F2B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "13430B4F35FA856E39F30A4ABE89A539F93FF555" : "..\/..",
+    "409A2EF878654D92A18DAC2E7D8CC80F9178683D" : "..\/..\/..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FastOpus",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FastOpus.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/benallfree\/fastcast-opus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "13430B4F35FA856E39F30A4ABE89A539F93FF555"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/rfwahab\/magicformsios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "409A2EF878654D92A18DAC2E7D8CC80F9178683D"
+    }
+  ]
+}

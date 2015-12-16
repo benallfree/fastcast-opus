@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F6191C41C21D606003D165A /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6191C21C21D5F4003D165A /* libopus.a */; };
+		8F6191CC1C21D858003D165A /* CSIDataQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F6191C61C21D858003D165A /* CSIDataQueue.c */; settings = {ASSET_TAGS = (); }; };
+		8F6191CD1C21D858003D165A /* CSIOpusDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6191C91C21D858003D165A /* CSIOpusDecoder.m */; settings = {ASSET_TAGS = (); }; };
+		8F6191CE1C21D858003D165A /* CSIOpusEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6191CB1C21D858003D165A /* CSIOpusEncoder.m */; settings = {ASSET_TAGS = (); }; };
+		8F867E981C2199B200565F77 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F867E971C2199B200565F77 /* AudioToolbox.framework */; };
+		8F867E9A1C2199BC00565F77 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F867E991C2199BC00565F77 /* CoreMedia.framework */; };
+		8F867E9C1C2199C700565F77 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F867E9B1C2199C700565F77 /* AVFoundation.framework */; };
+		8F867E9E1C2199D300565F77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F867E9D1C2199D300565F77 /* UIKit.framework */; };
+		8F867EA01C2199DF00565F77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F867E9F1C2199DF00565F77 /* Foundation.framework */; };
+		8F867EA21C2199E800565F77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F867EA11C2199E800565F77 /* CoreGraphics.framework */; };
+		8FEB4AA11C2170E700F15EEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB4AA01C2170E700F15EEB /* main.m */; };
+		8FEB4AA41C2170E700F15EEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB4AA31C2170E700F15EEB /* AppDelegate.m */; };
+		8FEB4AA71C2170E700F15EEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB4AA61C2170E700F15EEB /* ViewController.m */; };
+		8FEB4AAA1C2170E700F15EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEB4AA81C2170E700F15EEB /* Main.storyboard */; };
+		8FEB4AAC1C2170E700F15EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FEB4AAB1C2170E700F15EEB /* Assets.xcassets */; };
+		8FEB4AAF1C2170E700F15EEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEB4AAD1C2170E700F15EEB /* LaunchScreen.storyboard */; };
+		8FEB4ABA1C2170E700F15EEB /* FastOpusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB4AB91C2170E700F15EEB /* FastOpusTests.m */; };
+		8FEB4AC51C2170E700F15EEB /* FastOpusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB4AC41C2170E700F15EEB /* FastOpusUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FEB4AB61C2170E700F15EEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FEB4A941C2170E700F15EEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FEB4A9B1C2170E700F15EEB;
+			remoteInfo = FastOpus;
+		};
+		8FEB4AC11C2170E700F15EEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FEB4A941C2170E700F15EEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FEB4A9B1C2170E700F15EEB;
+			remoteInfo = FastOpus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F6191BD1C21D5F4003D165A /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		8F6191BE1C21D5F4003D165A /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		8F6191BF1C21D5F4003D165A /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		8F6191C01C21D5F4003D165A /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		8F6191C21C21D5F4003D165A /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		8F6191C61C21D858003D165A /* CSIDataQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CSIDataQueue.c; sourceTree = "<group>"; };
+		8F6191C71C21D858003D165A /* CSIDataQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSIDataQueue.h; sourceTree = "<group>"; };
+		8F6191C81C21D858003D165A /* CSIOpusDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSIOpusDecoder.h; sourceTree = "<group>"; };
+		8F6191C91C21D858003D165A /* CSIOpusDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSIOpusDecoder.m; sourceTree = "<group>"; };
+		8F6191CA1C21D858003D165A /* CSIOpusEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSIOpusEncoder.h; sourceTree = "<group>"; };
+		8F6191CB1C21D858003D165A /* CSIOpusEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSIOpusEncoder.m; sourceTree = "<group>"; };
+		8F867E971C2199B200565F77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8F867E991C2199BC00565F77 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8F867E9B1C2199C700565F77 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8F867E9D1C2199D300565F77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8F867E9F1C2199DF00565F77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8F867EA11C2199E800565F77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8FEB4A9C1C2170E700F15EEB /* FastOpus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastOpus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEB4AA01C2170E700F15EEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FEB4AA21C2170E700F15EEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8FEB4AA31C2170E700F15EEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8FEB4AA51C2170E700F15EEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8FEB4AA61C2170E700F15EEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8FEB4AA91C2170E700F15EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FEB4AAB1C2170E700F15EEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FEB4AAE1C2170E700F15EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FEB4AB01C2170E700F15EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FEB4AB51C2170E700F15EEB /* FastOpusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastOpusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEB4AB91C2170E700F15EEB /* FastOpusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastOpusTests.m; sourceTree = "<group>"; };
+		8FEB4ABB1C2170E700F15EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FEB4AC01C2170E700F15EEB /* FastOpusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastOpusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEB4AC41C2170E700F15EEB /* FastOpusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastOpusUITests.m; sourceTree = "<group>"; };
+		8FEB4AC61C2170E700F15EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FEB4A991C2170E700F15EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6191C41C21D606003D165A /* libopus.a in Frameworks */,
+				8F867EA21C2199E800565F77 /* CoreGraphics.framework in Frameworks */,
+				8F867EA01C2199DF00565F77 /* Foundation.framework in Frameworks */,
+				8F867E9E1C2199D300565F77 /* UIKit.framework in Frameworks */,
+				8F867E9C1C2199C700565F77 /* AVFoundation.framework in Frameworks */,
+				8F867E9A1C2199BC00565F77 /* CoreMedia.framework in Frameworks */,
+				8F867E981C2199B200565F77 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEB4AB21C2170E700F15EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEB4ABD1C2170E700F15EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F6191BB1C21D5F4003D165A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8F6191BC1C21D5F4003D165A /* opus */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8F6191BC1C21D5F4003D165A /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				8F6191BD1C21D5F4003D165A /* opus.h */,
+				8F6191BE1C21D5F4003D165A /* opus_defines.h */,
+				8F6191BF1C21D5F4003D165A /* opus_multistream.h */,
+				8F6191C01C21D5F4003D165A /* opus_types.h */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		8F6191C11C21D5F4003D165A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8F6191C21C21D5F4003D165A /* libopus.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		8F867EA31C219A7A00565F77 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				8F6191C61C21D858003D165A /* CSIDataQueue.c */,
+				8F6191C71C21D858003D165A /* CSIDataQueue.h */,
+				8F6191C81C21D858003D165A /* CSIOpusDecoder.h */,
+				8F6191C91C21D858003D165A /* CSIOpusDecoder.m */,
+				8F6191CA1C21D858003D165A /* CSIOpusEncoder.h */,
+				8F6191CB1C21D858003D165A /* CSIOpusEncoder.m */,
+				8F6191BB1C21D5F4003D165A /* include */,
+				8F6191C11C21D5F4003D165A /* lib */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		8FEB4A931C2170E700F15EEB = {
+			isa = PBXGroup;
+			children = (
+				8F867EA11C2199E800565F77 /* CoreGraphics.framework */,
+				8F867E9F1C2199DF00565F77 /* Foundation.framework */,
+				8F867E9D1C2199D300565F77 /* UIKit.framework */,
+				8F867E9B1C2199C700565F77 /* AVFoundation.framework */,
+				8F867E991C2199BC00565F77 /* CoreMedia.framework */,
+				8F867E971C2199B200565F77 /* AudioToolbox.framework */,
+				8FEB4A9E1C2170E700F15EEB /* FastOpus */,
+				8FEB4AB81C2170E700F15EEB /* FastOpusTests */,
+				8FEB4AC31C2170E700F15EEB /* FastOpusUITests */,
+				8FEB4A9D1C2170E700F15EEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FEB4A9D1C2170E700F15EEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB4A9C1C2170E700F15EEB /* FastOpus.app */,
+				8FEB4AB51C2170E700F15EEB /* FastOpusTests.xctest */,
+				8FEB4AC01C2170E700F15EEB /* FastOpusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FEB4A9E1C2170E700F15EEB /* FastOpus */ = {
+			isa = PBXGroup;
+			children = (
+				8F867EA31C219A7A00565F77 /* External */,
+				8FEB4AA21C2170E700F15EEB /* AppDelegate.h */,
+				8FEB4AA31C2170E700F15EEB /* AppDelegate.m */,
+				8FEB4AA51C2170E700F15EEB /* ViewController.h */,
+				8FEB4AA61C2170E700F15EEB /* ViewController.m */,
+				8FEB4AA81C2170E700F15EEB /* Main.storyboard */,
+				8FEB4AAB1C2170E700F15EEB /* Assets.xcassets */,
+				8FEB4AAD1C2170E700F15EEB /* LaunchScreen.storyboard */,
+				8FEB4AB01C2170E700F15EEB /* Info.plist */,
+				8FEB4A9F1C2170E700F15EEB /* Supporting Files */,
+			);
+			path = FastOpus;
+			sourceTree = "<group>";
+		};
+		8FEB4A9F1C2170E700F15EEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB4AA01C2170E700F15EEB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FEB4AB81C2170E700F15EEB /* FastOpusTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB4AB91C2170E700F15EEB /* FastOpusTests.m */,
+				8FEB4ABB1C2170E700F15EEB /* Info.plist */,
+			);
+			path = FastOpusTests;
+			sourceTree = "<group>";
+		};
+		8FEB4AC31C2170E700F15EEB /* FastOpusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB4AC41C2170E700F15EEB /* FastOpusUITests.m */,
+				8FEB4AC61C2170E700F15EEB /* Info.plist */,
+			);
+			path = FastOpusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FEB4A9B1C2170E700F15EEB /* FastOpus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FEB4AC91C2170E700F15EEB /* Build configuration list for PBXNativeTarget "FastOpus" */;
+			buildPhases = (
+				8FEB4A981C2170E700F15EEB /* Sources */,
+				8FEB4A991C2170E700F15EEB /* Frameworks */,
+				8FEB4A9A1C2170E700F15EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastOpus;
+			productName = FastOpus;
+			productReference = 8FEB4A9C1C2170E700F15EEB /* FastOpus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FEB4AB41C2170E700F15EEB /* FastOpusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FEB4ACC1C2170E700F15EEB /* Build configuration list for PBXNativeTarget "FastOpusTests" */;
+			buildPhases = (
+				8FEB4AB11C2170E700F15EEB /* Sources */,
+				8FEB4AB21C2170E700F15EEB /* Frameworks */,
+				8FEB4AB31C2170E700F15EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FEB4AB71C2170E700F15EEB /* PBXTargetDependency */,
+			);
+			name = FastOpusTests;
+			productName = FastOpusTests;
+			productReference = 8FEB4AB51C2170E700F15EEB /* FastOpusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FEB4ABF1C2170E700F15EEB /* FastOpusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FEB4ACF1C2170E700F15EEB /* Build configuration list for PBXNativeTarget "FastOpusUITests" */;
+			buildPhases = (
+				8FEB4ABC1C2170E700F15EEB /* Sources */,
+				8FEB4ABD1C2170E700F15EEB /* Frameworks */,
+				8FEB4ABE1C2170E700F15EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FEB4AC21C2170E700F15EEB /* PBXTargetDependency */,
+			);
+			name = FastOpusUITests;
+			productName = FastOpusUITests;
+			productReference = 8FEB4AC01C2170E700F15EEB /* FastOpusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FEB4A941C2170E700F15EEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = altair;
+				TargetAttributes = {
+					8FEB4A9B1C2170E700F15EEB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					8FEB4AB41C2170E700F15EEB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 8FEB4A9B1C2170E700F15EEB;
+					};
+					8FEB4ABF1C2170E700F15EEB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 8FEB4A9B1C2170E700F15EEB;
+					};
+				};
+			};
+			buildConfigurationList = 8FEB4A971C2170E700F15EEB /* Build configuration list for PBXProject "FastOpus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FEB4A931C2170E700F15EEB;
+			productRefGroup = 8FEB4A9D1C2170E700F15EEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FEB4A9B1C2170E700F15EEB /* FastOpus */,
+				8FEB4AB41C2170E700F15EEB /* FastOpusTests */,
+				8FEB4ABF1C2170E700F15EEB /* FastOpusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FEB4A9A1C2170E700F15EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEB4AAF1C2170E700F15EEB /* LaunchScreen.storyboard in Resources */,
+				8FEB4AAC1C2170E700F15EEB /* Assets.xcassets in Resources */,
+				8FEB4AAA1C2170E700F15EEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEB4AB31C2170E700F15EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEB4ABE1C2170E700F15EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FEB4A981C2170E700F15EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEB4AA71C2170E700F15EEB /* ViewController.m in Sources */,
+				8F6191CE1C21D858003D165A /* CSIOpusEncoder.m in Sources */,
+				8F6191CC1C21D858003D165A /* CSIDataQueue.c in Sources */,
+				8F6191CD1C21D858003D165A /* CSIOpusDecoder.m in Sources */,
+				8FEB4AA41C2170E700F15EEB /* AppDelegate.m in Sources */,
+				8FEB4AA11C2170E700F15EEB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEB4AB11C2170E700F15EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEB4ABA1C2170E700F15EEB /* FastOpusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEB4ABC1C2170E700F15EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEB4AC51C2170E700F15EEB /* FastOpusUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FEB4AB71C2170E700F15EEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FEB4A9B1C2170E700F15EEB /* FastOpus */;
+			targetProxy = 8FEB4AB61C2170E700F15EEB /* PBXContainerItemProxy */;
+		};
+		8FEB4AC21C2170E700F15EEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FEB4A9B1C2170E700F15EEB /* FastOpus */;
+			targetProxy = 8FEB4AC11C2170E700F15EEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FEB4AA81C2170E700F15EEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FEB4AA91C2170E700F15EEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FEB4AAD1C2170E700F15EEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FEB4AAE1C2170E700F15EEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FEB4AC71C2170E700F15EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8FEB4AC81C2170E700F15EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FEB4ACA1C2170E700F15EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jeff Lee (A676BC532X)";
+				INFOPLIST_FILE = FastOpus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FastOpus",
+					"$(PROJECT_DIR)/FastOpus/External/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.altair.FastOpus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c0cf684-a331-4bc9-9a24-f0b14882a5aa";
+			};
+			name = Debug;
+		};
+		8FEB4ACB1C2170E700F15EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jeff Lee (A676BC532X)";
+				INFOPLIST_FILE = FastOpus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FastOpus",
+					"$(PROJECT_DIR)/FastOpus/External/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.altair.FastOpus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c0cf684-a331-4bc9-9a24-f0b14882a5aa";
+			};
+			name = Release;
+		};
+		8FEB4ACD1C2170E700F15EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FastOpusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altair.FastOpusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastOpus.app/FastOpus";
+			};
+			name = Debug;
+		};
+		8FEB4ACE1C2170E700F15EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FastOpusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altair.FastOpusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastOpus.app/FastOpus";
+			};
+			name = Release;
+		};
+		8FEB4AD01C2170E700F15EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FastOpusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altair.FastOpusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FastOpus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8FEB4AD11C2170E700F15EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FastOpusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altair.FastOpusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FastOpus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FEB4A971C2170E700F15EEB /* Build configuration list for PBXProject "FastOpus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEB4AC71C2170E700F15EEB /* Debug */,
+				8FEB4AC81C2170E700F15EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FEB4AC91C2170E700F15EEB /* Build configuration list for PBXNativeTarget "FastOpus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEB4ACA1C2170E700F15EEB /* Debug */,
+				8FEB4ACB1C2170E700F15EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FEB4ACC1C2170E700F15EEB /* Build configuration list for PBXNativeTarget "FastOpusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEB4ACD1C2170E700F15EEB /* Debug */,
+				8FEB4ACE1C2170E700F15EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FEB4ACF1C2170E700F15EEB /* Build configuration list for PBXNativeTarget "FastOpusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEB4AD01C2170E700F15EEB /* Debug */,
+				8FEB4AD11C2170E700F15EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FEB4A941C2170E700F15EEB /* Project object */;
+}
