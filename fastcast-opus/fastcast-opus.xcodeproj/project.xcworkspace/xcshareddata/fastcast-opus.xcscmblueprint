@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "13430B4F35FA856E39F30A4ABE89A539F93FF555",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "13430B4F35FA856E39F30A4ABE89A539F93FF555" : 0,
+    "9BF7062ED973B558C66146C1A5E4C22B92D2DE86" : 0,
+    "126345DB4EBF58158AD4DAB8E2FE55AD02A5BE4A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E8FDFB3A-4267-4800-971F-5B9BA0601AC0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "13430B4F35FA856E39F30A4ABE89A539F93FF555" : "fastcast-opus\/",
+    "9BF7062ED973B558C66146C1A5E4C22B92D2DE86" : "fastcast-opus\/fastcast-opus\/libopus-ios\/",
+    "126345DB4EBF58158AD4DAB8E2FE55AD02A5BE4A" : "fastcast-opus\/fastcast-opus\/novocaine\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "fastcast-opus",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "fastcast-opus\/fastcast-opus.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:alexbw\/novocaine.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "126345DB4EBF58158AD4DAB8E2FE55AD02A5BE4A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/benallfree\/fastcast-opus",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "13430B4F35FA856E39F30A4ABE89A539F93FF555"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:benallfree\/libopus-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9BF7062ED973B558C66146C1A5E4C22B92D2DE86"
+    }
+  ]
+}
