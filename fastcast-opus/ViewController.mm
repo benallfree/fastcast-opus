@@ -25,7 +25,7 @@
 {
     [super viewWillAppear:animated];
     
-    __weak ViewController * wself = self;
+    __weak typeof(self)wself = self;
     
     self.ringBuffer = new RingBuffer(32768, 2);
 
@@ -41,7 +41,6 @@
     
 
     // Play-through
-    __weak typeof(self)wself = self;
     
         [audioManager setInputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels) {
             float volume = 0.5;
