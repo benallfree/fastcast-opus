@@ -7,17 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0CBE8D1C2344A900B2390B /* AudioFileReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F0CBE861C2344A900B2390B /* AudioFileReader.mm */; };
+		0F0CBE8E1C2344A900B2390B /* AudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0CBE881C2344A900B2390B /* AudioFileWriter.m */; };
+		0F0CBE8F1C2344A900B2390B /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0CBE8A1C2344A900B2390B /* Novocaine.m */; };
+		0F0CBE901C2344A900B2390B /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F0CBE8C1C2344A900B2390B /* RingBuffer.mm */; };
+		0F0CBE921C2344D400B2390B /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBE911C2344D400B2390B /* libopus.a */; };
 		84139E251C21DCB2003E8DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84139E241C21DCB2003E8DC4 /* main.m */; };
 		84139E281C21DCB2003E8DC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84139E271C21DCB2003E8DC4 /* AppDelegate.m */; };
 		84139E2B1C21DCB2003E8DC4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84139E2A1C21DCB2003E8DC4 /* ViewController.mm */; };
 		84139E2E1C21DCB2003E8DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84139E2C1C21DCB2003E8DC4 /* Main.storyboard */; };
 		84139E301C21DCB2003E8DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84139E2F1C21DCB2003E8DC4 /* Assets.xcassets */; };
 		84139E331C21DCB2003E8DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84139E311C21DCB2003E8DC4 /* LaunchScreen.storyboard */; };
-		84D1B7C11C22DDB400FF1FAC /* libNovocaine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D1B7BF1C22DDB400FF1FAC /* libNovocaine.a */; };
-		84D1B7C21C22DDB400FF1FAC /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D1B7C01C22DDB400FF1FAC /* libopus.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F0CBE851C2344A900B2390B /* AudioFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileReader.h; sourceTree = "<group>"; };
+		0F0CBE861C2344A900B2390B /* AudioFileReader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioFileReader.mm; sourceTree = "<group>"; };
+		0F0CBE871C2344A900B2390B /* AudioFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileWriter.h; sourceTree = "<group>"; };
+		0F0CBE881C2344A900B2390B /* AudioFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileWriter.m; sourceTree = "<group>"; };
+		0F0CBE891C2344A900B2390B /* Novocaine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Novocaine.h; sourceTree = "<group>"; };
+		0F0CBE8A1C2344A900B2390B /* Novocaine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Novocaine.m; sourceTree = "<group>"; };
+		0F0CBE8B1C2344A900B2390B /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
+		0F0CBE8C1C2344A900B2390B /* RingBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RingBuffer.mm; sourceTree = "<group>"; };
+		0F0CBE911C2344D400B2390B /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = "../libopus-ios/build/Debug-iphoneos/libopus.a"; sourceTree = "<group>"; };
 		84139E201C21DCB2003E8DC4 /* fastcast-opus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fastcast-opus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84139E241C21DCB2003E8DC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84139E261C21DCB2003E8DC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,8 +40,6 @@
 		84139E2F1C21DCB2003E8DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84139E321C21DCB2003E8DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84139E341C21DCB2003E8DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84D1B7BF1C22DDB400FF1FAC /* libNovocaine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNovocaine.a; path = "../novocaine/build/Debug-iphoneos/libNovocaine.a"; sourceTree = "<group>"; };
-		84D1B7C01C22DDB400FF1FAC /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = "../libopus-ios/build/Debug-iphoneos/libopus.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,19 +47,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D1B7C11C22DDB400FF1FAC /* libNovocaine.a in Frameworks */,
-				84D1B7C21C22DDB400FF1FAC /* libopus.a in Frameworks */,
+				0F0CBE921C2344D400B2390B /* libopus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0CBE831C23449700B2390B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0F0CBE841C2344A900B2390B /* Novocaine */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		0F0CBE841C2344A900B2390B /* Novocaine */ = {
+			isa = PBXGroup;
+			children = (
+				0F0CBE851C2344A900B2390B /* AudioFileReader.h */,
+				0F0CBE861C2344A900B2390B /* AudioFileReader.mm */,
+				0F0CBE871C2344A900B2390B /* AudioFileWriter.h */,
+				0F0CBE881C2344A900B2390B /* AudioFileWriter.m */,
+				0F0CBE891C2344A900B2390B /* Novocaine.h */,
+				0F0CBE8A1C2344A900B2390B /* Novocaine.m */,
+				0F0CBE8B1C2344A900B2390B /* RingBuffer.h */,
+				0F0CBE8C1C2344A900B2390B /* RingBuffer.mm */,
+			);
+			name = Novocaine;
+			path = ../novocaine/Novocaine;
+			sourceTree = "<group>";
+		};
 		84139E171C21DCB1003E8DC4 = {
 			isa = PBXGroup;
 			children = (
-				84D1B7BF1C22DDB400FF1FAC /* libNovocaine.a */,
-				84D1B7C01C22DDB400FF1FAC /* libopus.a */,
+				0F0CBE911C2344D400B2390B /* libopus.a */,
+				0F0CBE831C23449700B2390B /* Library */,
 				84139E221C21DCB2003E8DC4 /* fastcast-opus */,
 				84139E211C21DCB2003E8DC4 /* Products */,
 			);
@@ -159,7 +192,11 @@
 			files = (
 				84139E2B1C21DCB2003E8DC4 /* ViewController.mm in Sources */,
 				84139E281C21DCB2003E8DC4 /* AppDelegate.m in Sources */,
+				0F0CBE8F1C2344A900B2390B /* Novocaine.m in Sources */,
+				0F0CBE901C2344A900B2390B /* RingBuffer.mm in Sources */,
+				0F0CBE8E1C2344A900B2390B /* AudioFileWriter.m in Sources */,
 				84139E251C21DCB2003E8DC4 /* main.m in Sources */,
+				0F0CBE8D1C2344A900B2390B /* AudioFileReader.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
