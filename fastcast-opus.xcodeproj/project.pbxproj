@@ -13,8 +13,38 @@
 		84139E2E1C21DCB2003E8DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84139E2C1C21DCB2003E8DC4 /* Main.storyboard */; };
 		84139E301C21DCB2003E8DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84139E2F1C21DCB2003E8DC4 /* Assets.xcassets */; };
 		84139E331C21DCB2003E8DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84139E311C21DCB2003E8DC4 /* LaunchScreen.storyboard */; };
-		84139F231C2245EB003E8DC4 /* libNovocaine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84139F221C2245EB003E8DC4 /* libNovocaine.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F5741BF1C22871D0077DE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F5741B91C22871C0077DE9C /* Novocaine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA55267C152A63B6003D9601;
+			remoteInfo = "Novocaine Mac Example";
+		};
+		8F5741C11C22871D0077DE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F5741B91C22871C0077DE9C /* Novocaine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA5526CE152A6451003D9601;
+			remoteInfo = "Novocaine iOS Example";
+		};
+		8F5741C31C22871D0077DE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F5741B91C22871C0077DE9C /* Novocaine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84139F001C223D91003E8DC4;
+			remoteInfo = Novocaine;
+		};
+		8F5741C51C2287300077DE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F5741B91C22871C0077DE9C /* Novocaine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84139EFF1C223D91003E8DC4;
+			remoteInfo = Novocaine;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		84139E201C21DCB2003E8DC4 /* fastcast-opus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fastcast-opus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,7 +57,7 @@
 		84139E2F1C21DCB2003E8DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84139E321C21DCB2003E8DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84139E341C21DCB2003E8DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84139F221C2245EB003E8DC4 /* libNovocaine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNovocaine.a; path = "vendor/novocaine/build/Debug-iphoneos/libNovocaine.a"; sourceTree = "<group>"; };
+		8F5741B91C22871C0077DE9C /* Novocaine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Novocaine.xcodeproj; path = vendor/novocaine/Novocaine.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84139F231C2245EB003E8DC4 /* libNovocaine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +74,7 @@
 		84139E171C21DCB1003E8DC4 = {
 			isa = PBXGroup;
 			children = (
-				84139F221C2245EB003E8DC4 /* libNovocaine.a */,
+				8F5741B91C22871C0077DE9C /* Novocaine.xcodeproj */,
 				84139E221C21DCB2003E8DC4 /* fastcast-opus */,
 				84139E211C21DCB2003E8DC4 /* Products */,
 			);
@@ -83,6 +112,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8F5741BA1C22871C0077DE9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F5741C01C22871D0077DE9C /* Novocaine Mac Example.app */,
+				8F5741C21C22871D0077DE9C /* Novocaine iOS Example.app */,
+				8F5741C41C22871D0077DE9C /* libNovocaine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,6 +136,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8F5741C61C2287300077DE9C /* PBXTargetDependency */,
 			);
 			name = "fastcast-opus";
 			productName = "fastcast-opus";
@@ -128,12 +168,42 @@
 			mainGroup = 84139E171C21DCB1003E8DC4;
 			productRefGroup = 84139E211C21DCB2003E8DC4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8F5741BA1C22871C0077DE9C /* Products */;
+					ProjectRef = 8F5741B91C22871C0077DE9C /* Novocaine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				84139E1F1C21DCB2003E8DC4 /* fastcast-opus */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8F5741C01C22871D0077DE9C /* Novocaine Mac Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Novocaine Mac Example.app";
+			remoteRef = 8F5741BF1C22871D0077DE9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F5741C21C22871D0077DE9C /* Novocaine iOS Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Novocaine iOS Example.app";
+			remoteRef = 8F5741C11C22871D0077DE9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F5741C41C22871D0077DE9C /* libNovocaine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNovocaine.a;
+			remoteRef = 8F5741C31C22871D0077DE9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		84139E1E1C21DCB2003E8DC4 /* Resources */ = {
@@ -160,6 +230,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F5741C61C2287300077DE9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Novocaine;
+			targetProxy = 8F5741C51C2287300077DE9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84139E2C1C21DCB2003E8DC4 /* Main.storyboard */ = {
@@ -277,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benallfree.fastcast-opus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -294,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benallfree.fastcast-opus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
