@@ -41,7 +41,7 @@ typedef void (^NovocaineOutputBlock)(float *data, UInt32 numFrames, UInt32 numCh
 typedef void (^NovocaineInputBlock)(float *data, UInt32 numFrames, UInt32 numChannels);
 
 #if defined (USING_IOS)
-@interface Novocaine : NSObject <UIAlertViewDelegate>
+@interface Novocaine : NSObject
 #elif defined (USING_OSX)
 @interface Novocaine : NSObject
 #endif
