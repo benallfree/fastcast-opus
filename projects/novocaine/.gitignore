@@ -15,14 +15,4 @@ build/*
 *.perspective
 *.perspectivev3
 *.pbxuser
-*.pbxproj
-*.xcworkspace
-xcuserdata
 
-Novocaine.xcodeproj/project.xcworkspace/xcuserdata/Alex.xcuserdatad/UserInterfaceState.xcuserstate
-
-Novocaine.xcodeproj/project.pbxproj
-
-Novocaine.xcodeproj/xcuserdata/Alex.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
-
-Novocaine.xcodeproj/xcuserdata/Alex.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist

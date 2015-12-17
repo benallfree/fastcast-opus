@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Blister.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Novocaine Mac Example.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Novocaine iOS Example.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Novocaine.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Static.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>84139EC61C223B59003E8DC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84139ED71C223C39003E8DC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84139EE41C223C98003E8DC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84139EF11C223D43003E8DC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84139EFF1C223D91003E8DC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA55267B152A63B6003D9601</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA5526CD152A6451003D9601</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
