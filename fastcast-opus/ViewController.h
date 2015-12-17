@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Novocaine.h"
 
 @interface ViewController : UIViewController
 

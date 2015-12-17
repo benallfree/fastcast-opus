@@ -1,6 +1,0 @@
-[submodule "fastcast-opus/novocaine"]
-	path = fastcast-opus/novocaine
-	url = git@github.com:benallfree/novocaine.git
-[submodule "fastcast-opus/libopus-ios"]
-	path = fastcast-opus/libopus-ios
-	url = git@github.com:benallfree/libopus-ios.git

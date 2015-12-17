@@ -13,36 +13,30 @@
 		84139E2E1C21DCB2003E8DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84139E2C1C21DCB2003E8DC4 /* Main.storyboard */; };
 		84139E301C21DCB2003E8DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84139E2F1C21DCB2003E8DC4 /* Assets.xcassets */; };
 		84139E331C21DCB2003E8DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84139E311C21DCB2003E8DC4 /* LaunchScreen.storyboard */; };
+		84139EAA1C2235A4003E8DC4 /* libNovocaine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84139EA91C2235A4003E8DC4 /* libNovocaine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		84139E3F1C21DCFF003E8DC4 /* PBXContainerItemProxy */ = {
+		84139E961C223543003E8DC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84139E3A1C21DCFF003E8DC4 /* libopus.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8B8690F318710A4500F7B10F;
-			remoteInfo = libopus;
-		};
-		84139E411C21DCFF003E8DC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84139E3A1C21DCFF003E8DC4 /* libopus.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8B26D9B5187230B8008020B5;
-			remoteInfo = "libopus Tests";
-		};
-		84139E481C21DE8E003E8DC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84139E431C21DE8E003E8DC4 /* Novocaine.xcodeproj */;
+			containerPortal = 84139E901C223543003E8DC4 /* Novocaine.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FA55267C152A63B6003D9601;
 			remoteInfo = "Novocaine Mac Example";
 		};
-		84139E4A1C21DE8E003E8DC4 /* PBXContainerItemProxy */ = {
+		84139E981C223543003E8DC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84139E431C21DE8E003E8DC4 /* Novocaine.xcodeproj */;
+			containerPortal = 84139E901C223543003E8DC4 /* Novocaine.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FA5526CE152A6451003D9601;
 			remoteInfo = "Novocaine iOS Example";
+		};
+		84139EA81C2235A4003E8DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84139E901C223543003E8DC4 /* Novocaine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84139E9E1C22357F003E8DC4;
+			remoteInfo = Novocaine;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,8 +51,7 @@
 		84139E2F1C21DCB2003E8DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84139E321C21DCB2003E8DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84139E341C21DCB2003E8DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84139E3A1C21DCFF003E8DC4 /* libopus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libopus.xcodeproj; path = "libopus-ios/libopus.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		84139E431C21DE8E003E8DC4 /* Novocaine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Novocaine.xcodeproj; path = novocaine/Novocaine.xcodeproj; sourceTree = "<group>"; };
+		84139E901C223543003E8DC4 /* Novocaine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Novocaine.xcodeproj; path = novocaine/Novocaine.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84139EAA1C2235A4003E8DC4 /* libNovocaine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +69,7 @@
 		84139E171C21DCB1003E8DC4 = {
 			isa = PBXGroup;
 			children = (
-				84139E431C21DE8E003E8DC4 /* Novocaine.xcodeproj */,
-				84139E3A1C21DCFF003E8DC4 /* libopus.xcodeproj */,
+				84139E901C223543003E8DC4 /* Novocaine.xcodeproj */,
 				84139E221C21DCB2003E8DC4 /* fastcast-opus */,
 				84139E211C21DCB2003E8DC4 /* Products */,
 			);
@@ -114,20 +107,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		84139E3B1C21DCFF003E8DC4 /* Products */ = {
+		84139E911C223543003E8DC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84139E401C21DCFF003E8DC4 /* libopus.a */,
-				84139E421C21DCFF003E8DC4 /* libopus Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		84139E441C21DE8E003E8DC4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				84139E491C21DE8E003E8DC4 /* Novocaine Mac Example.app */,
-				84139E4B1C21DE8E003E8DC4 /* Novocaine iOS Example.app */,
+				84139E971C223543003E8DC4 /* Novocaine Mac Example.app */,
+				84139E991C223543003E8DC4 /* Novocaine iOS Example.app */,
+				84139EA91C2235A4003E8DC4 /* libNovocaine.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,12 +164,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 84139E3B1C21DCFF003E8DC4 /* Products */;
-					ProjectRef = 84139E3A1C21DCFF003E8DC4 /* libopus.xcodeproj */;
-				},
-				{
-					ProductGroup = 84139E441C21DE8E003E8DC4 /* Products */;
-					ProjectRef = 84139E431C21DE8E003E8DC4 /* Novocaine.xcodeproj */;
+					ProductGroup = 84139E911C223543003E8DC4 /* Products */;
+					ProjectRef = 84139E901C223543003E8DC4 /* Novocaine.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -195,32 +176,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		84139E401C21DCFF003E8DC4 /* libopus.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libopus.a;
-			remoteRef = 84139E3F1C21DCFF003E8DC4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		84139E421C21DCFF003E8DC4 /* libopus Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "libopus Tests.xctest";
-			remoteRef = 84139E411C21DCFF003E8DC4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		84139E491C21DE8E003E8DC4 /* Novocaine Mac Example.app */ = {
+		84139E971C223543003E8DC4 /* Novocaine Mac Example.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Novocaine Mac Example.app";
-			remoteRef = 84139E481C21DE8E003E8DC4 /* PBXContainerItemProxy */;
+			remoteRef = 84139E961C223543003E8DC4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84139E4B1C21DE8E003E8DC4 /* Novocaine iOS Example.app */ = {
+		84139E991C223543003E8DC4 /* Novocaine iOS Example.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Novocaine iOS Example.app";
-			remoteRef = 84139E4A1C21DE8E003E8DC4 /* PBXContainerItemProxy */;
+			remoteRef = 84139E981C223543003E8DC4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84139EA91C2235A4003E8DC4 /* libNovocaine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNovocaine.a;
+			remoteRef = 84139EA81C2235A4003E8DC4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -362,6 +336,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benallfree.fastcast-opus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -374,6 +349,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benallfree.fastcast-opus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -396,6 +372,7 @@
 				84139E391C21DCB2003E8DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,10 +8,7 @@
 
 #import "ViewController.h"
 #import "Novocaine.h"
-
-@interface ViewController ()
-
-@end
+     
 
 @implementation ViewController
 
