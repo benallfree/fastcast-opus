@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84D1B7B61C22DD6E00FF1FAC /* opus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B86911D18710B0000F7B10F /* opus.h */; };
+		84D1B7B71C22DD6E00FF1FAC /* opus_custom.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B86911E18710B0000F7B10F /* opus_custom.h */; };
+		84D1B7B81C22DD6E00FF1FAC /* opus_defines.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B86911F18710B0000F7B10F /* opus_defines.h */; };
+		84D1B7B91C22DD6E00FF1FAC /* opus_multistream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B86912018710B0000F7B10F /* opus_multistream.h */; };
+		84D1B7BA1C22DD6E00FF1FAC /* opus_types.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B86912118710B0000F7B10F /* opus_types.h */; };
 		8B26D9B7187230B8008020B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B26D9B6187230B8008020B5 /* XCTest.framework */; };
 		8B26D9B8187230B8008020B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8690F618710A4500F7B10F /* Foundation.framework */; };
 		8B26D9BA187230B8008020B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B26D9B9187230B8008020B5 /* UIKit.framework */; };
@@ -177,6 +182,11 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				84D1B7B61C22DD6E00FF1FAC /* opus.h in CopyFiles */,
+				84D1B7B71C22DD6E00FF1FAC /* opus_custom.h in CopyFiles */,
+				84D1B7B81C22DD6E00FF1FAC /* opus_defines.h in CopyFiles */,
+				84D1B7B91C22DD6E00FF1FAC /* opus_multistream.h in CopyFiles */,
+				84D1B7BA1C22DD6E00FF1FAC /* opus_types.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
