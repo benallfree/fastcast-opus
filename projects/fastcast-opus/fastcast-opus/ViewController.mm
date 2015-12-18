@@ -66,18 +66,15 @@
     //    // Play-through
     //
     [audioManager setInputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels) {
-        float volume = 0.5;
-        vDSP_vsmul(data, 1, &volume, data, 1, numFrames*numChannels);
-        wself.ringBuffer->AddNewInterleavedFloatData(data, numFrames, numChannels);
         NSData *d = [NSData dataWithBytes:data length:sizeof(float)*numFrames*numChannels];
         [udpSocket sendData:d withTimeout:TIMEOUT tag:AUDIO_TAG];
-
     }];
-    //
-    //
-    //        [audioManager setOutputBlock:^(float *outData, UInt32 numFrames, UInt32 numChannels) {
-    //            wself.ringBuffer->FetchInterleavedData(outData, numFrames, numChannels);
-    //        }];
+
+    
+    [audioManager setOutputBlock:^(float *outData, UInt32 numFrames, UInt32 numChannels) {
+        wself.ringBuffer->FetchInterleavedData(outData, numFrames, numChannels);
+    }];
+    
     //
     ////    [audioManager setInputBlock:^(float *newAudio, UInt32 numSamples, UInt32 numChannels) {
     ////        NSLog([NSString stringWithFormat:@"%d", (unsigned int)numSamples]);
@@ -112,7 +109,8 @@
 
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didReceiveData:(NSData *)data fromAddress:(NSData *)address withFilterContext:(id)filterContext
 {
-    NSLog(@"Receved bytes: %lu", (unsigned long)data.length);
+    int numChannels = 2;
+    self.ringBuffer->AddNewInterleavedFloatData((float *)[data bytes], [data length]/sizeof(float)/numChannels, numChannels);
 }
 
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didSendDataWithTag:(long)tag
