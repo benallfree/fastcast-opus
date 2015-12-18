@@ -10,4 +10,7 @@
    <FileRef
       location = "group:projects/novocaine/Novocaine.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:projects/CocoaAsyncSocket/CocoaAsyncSocket.xcodeproj">
+   </FileRef>
 </Workspace>

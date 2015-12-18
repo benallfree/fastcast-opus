@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0F0CBE921C2344D400B2390B /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBE911C2344D400B2390B /* libopus.a */; };
 		0F0CBEAA1C234C4100B2390B /* libNovocaine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBEA91C234C4100B2390B /* libNovocaine.a */; };
+		0F0CBEB91C2388E400B2390B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBEB41C2385FD00B2390B /* CocoaAsyncSocket.framework */; };
+		0F0CBEBA1C2389F900B2390B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBEB41C2385FD00B2390B /* CocoaAsyncSocket.framework */; };
+		0F0CBEBB1C2389F900B2390B /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBEB41C2385FD00B2390B /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84139E251C21DCB2003E8DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84139E241C21DCB2003E8DC4 /* main.m */; };
 		84139E281C21DCB2003E8DC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84139E271C21DCB2003E8DC4 /* AppDelegate.m */; };
 		84139E2B1C21DCB2003E8DC4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84139E2A1C21DCB2003E8DC4 /* ViewController.mm */; };
@@ -17,9 +20,24 @@
 		84139E331C21DCB2003E8DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84139E311C21DCB2003E8DC4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0F0CBEBC1C2389FA00B2390B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0F0CBEBB1C2389F900B2390B /* CocoaAsyncSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0F0CBE911C2344D400B2390B /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = "../libopus-ios/build/Debug-iphoneos/libopus.a"; sourceTree = "<group>"; };
 		0F0CBEA91C234C4100B2390B /* libNovocaine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNovocaine.a; path = "../novocaine/build/Debug-iphoneos/libNovocaine.a"; sourceTree = "<group>"; };
+		0F0CBEB41C2385FD00B2390B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "../../../../../../../../../../Users/common/Library/Developer/Xcode/DerivedData/fastcast-opus-aynutgjwsctunmbpcebfqpfwflob/Build/Products/Debug-iphoneos/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
 		84139E201C21DCB2003E8DC4 /* fastcast-opus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fastcast-opus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84139E241C21DCB2003E8DC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84139E261C21DCB2003E8DC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,7 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0CBEB91C2388E400B2390B /* CocoaAsyncSocket.framework in Frameworks */,
 				0F0CBEAA1C234C4100B2390B /* libNovocaine.a in Frameworks */,
+				0F0CBEBA1C2389F900B2390B /* CocoaAsyncSocket.framework in Frameworks */,
 				0F0CBE921C2344D400B2390B /* libopus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +68,7 @@
 		84139E171C21DCB1003E8DC4 = {
 			isa = PBXGroup;
 			children = (
+				0F0CBEB41C2385FD00B2390B /* CocoaAsyncSocket.framework */,
 				0F0CBEA91C234C4100B2390B /* libNovocaine.a */,
 				0F0CBE911C2344D400B2390B /* libopus.a */,
 				84139E221C21DCB2003E8DC4 /* fastcast-opus */,
@@ -97,6 +118,7 @@
 				84139E1C1C21DCB2003E8DC4 /* Sources */,
 				84139E1D1C21DCB2003E8DC4 /* Frameworks */,
 				84139E1E1C21DCB2003E8DC4 /* Resources */,
+				0F0CBEBC1C2389FA00B2390B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +211,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -233,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -271,8 +295,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
 				INFOPLIST_FILE = "fastcast-opus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -288,8 +316,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
 				INFOPLIST_FILE = "fastcast-opus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
