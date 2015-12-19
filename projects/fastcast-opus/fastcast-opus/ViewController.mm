@@ -9,7 +9,8 @@
 #import "ViewController.h"
 
 #import "Novocaine.h"
-#import "RingBuffer.h"
+#import "NSMutableArray+QueueAdditions.h"
+#import "BufferEntry.h"
 
 #define     SERVER_IP @"127.0.0.1"
 #define     SERVER_PORT 33333
@@ -18,18 +19,21 @@
 #define     AUDIO_TAG 1
 
 
+
+
 @interface ViewController()<GCDAsyncUdpSocketDelegate>
 {
     GCDAsyncUdpSocket *udpSocket;
+    NSMutableArray *buffers;
     dispatch_queue_t udpQueue;
 }
-    @property (nonatomic, assign) RingBuffer *ringBuffer;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    buffers = [[NSMutableArray alloc] init];
     udpQueue = dispatch_get_main_queue();
     udpSocket = [[GCDAsyncUdpSocket alloc] initWithDelegate:self delegateQueue:udpQueue];
     [udpSocket connectToHost:SERVER_IP onPort:SERVER_PORT error:nil];
@@ -37,15 +41,11 @@
         return true;
     } withQueue:udpQueue];
     [udpSocket beginReceiving:nil];
-    
-//    [udpSocket receiveWithTimeout:TIMEOUT tag:AUDIO_TAG];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.ringBuffer = new RingBuffer(32768, 2);
     [self performSelectorInBackground:@selector(startRecording) withObject:nil];
 }
 
@@ -53,37 +53,27 @@
     
     __weak typeof(self)wself = self;
     Novocaine *audioManager = [Novocaine audioManager];
-    //
-    //    // Make some NOISE
-    ////    [audioManager setOutputBlock:^(float *newdata, UInt32 numFrames, UInt32 thisNumChannels)
-    ////    {
-    ////        for (int i = 0; i < numFrames * thisNumChannels; i++) {
-    ////            newdata[i] = (rand() % 100) / 100.0f / 2;
-    ////        }
-    ////    }];
-    //
-    //
-    //    // Play-through
-    //
+
+    // Capture mic input
     [audioManager setInputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels) {
         NSData *d = [NSData dataWithBytes:data length:sizeof(float)*numFrames*numChannels];
         [udpSocket sendData:d withTimeout:TIMEOUT tag:AUDIO_TAG];
     }];
 
-    
+    // Play audio from echo server
     [audioManager setOutputBlock:^(float *outData, UInt32 numFrames, UInt32 numChannels) {
-        wself.ringBuffer->FetchInterleavedData(outData, numFrames, numChannels);
+        if([buffers count]==0)
+        {
+            outData = NULL;
+            numFrames = 0;
+            numChannels = 0;
+            return;
+        }
+        BufferEntry *be = [buffers dequeue];
+        memcpy(outData, be.buffer, be.length);
     }];
     
-    //
-    ////    [audioManager setInputBlock:^(float *newAudio, UInt32 numSamples, UInt32 numChannels) {
-    ////        NSLog([NSString stringWithFormat:@"%d", (unsigned int)numSamples]);
-    ////        // Now you're getting audio from the microphone every 20 milliseconds or so. How's that for easy?
-    ////        // Audio comes in interleaved, so,
-    ////        // if numChannels = 2, newAudio[0] is channel 1, newAudio[1] is channel 2, newAudio[2] is channel 1, etc.
-    ////    }];
     [audioManager play];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -110,7 +100,9 @@
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didReceiveData:(NSData *)data fromAddress:(NSData *)address withFilterContext:(id)filterContext
 {
     int numChannels = 2;
-    self.ringBuffer->AddNewInterleavedFloatData((float *)[data bytes], [data length]/sizeof(float)/numChannels, numChannels);
+    BufferEntry *be = [BufferEntry alloc];
+    [be init:(float *)[data bytes] ofNumFrames:(UInt32)[data length]/sizeof(float)/numChannels andNumChannels:numChannels];
+    [buffers enqueue:be];
 }
 
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didSendDataWithTag:(long)tag
@@ -122,32 +114,4 @@
 {
     
 }
-
-
-//- (void)onUdpSocket:(GCDAsyncUdpSocket *)sock didNotReceiveDataWithTag:(long)tag dueToError:(NSError *)error
-//{
-//    
-//}
-//
-//- (void)onUdpSocket:(AsyncUdpSocket *)sock didNotSendDataWithTag:(long)tag dueToError:(NSError *)error
-//{
-//    
-//}
-//
-//- (BOOL)onUdpSocket:(AsyncUdpSocket *)sock didReceiveData:(NSData *)data withTag:(long)tag fromHost:(NSString *)host port:(UInt16)port
-//{
-//    NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
-//    return true;
-//}
-//
-//- (void)onUdpSocket:(AsyncUdpSocket *)sock didSendDataWithTag:(long)tag
-//{
-////    NSLog(@"send data");
-//}
-//
-//- (void)onUdpSocketDidClose:(AsyncUdpSocket *)sock
-//{
-//    
-//}
-
 @end
