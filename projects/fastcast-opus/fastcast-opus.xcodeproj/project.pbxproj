@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0F0CBE921C2344D400B2390B /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBE911C2344D400B2390B /* libopus.a */; };
-		0F0CBEAA1C234C4100B2390B /* libNovocaine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBEA91C234C4100B2390B /* libNovocaine.a */; };
-		0F0CBEB91C2388E400B2390B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBEB41C2385FD00B2390B /* CocoaAsyncSocket.framework */; };
-		0F0CBEBA1C2389F900B2390B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBEB41C2385FD00B2390B /* CocoaAsyncSocket.framework */; };
-		0F0CBEBB1C2389F900B2390B /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0CBEB41C2385FD00B2390B /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84139E251C21DCB2003E8DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84139E241C21DCB2003E8DC4 /* main.m */; };
 		84139E281C21DCB2003E8DC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84139E271C21DCB2003E8DC4 /* AppDelegate.m */; };
 		84139E2B1C21DCB2003E8DC4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84139E2A1C21DCB2003E8DC4 /* ViewController.mm */; };
 		84139E2E1C21DCB2003E8DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84139E2C1C21DCB2003E8DC4 /* Main.storyboard */; };
 		84139E301C21DCB2003E8DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84139E2F1C21DCB2003E8DC4 /* Assets.xcassets */; };
 		84139E331C21DCB2003E8DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84139E311C21DCB2003E8DC4 /* LaunchScreen.storyboard */; };
+		844A387F1C24E747001499BA /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A387E1C24E747001499BA /* NSMutableArray+QueueAdditions.m */; };
+		844A38811C252D6F001499BA /* BufferEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A38801C252D6F001499BA /* BufferEntry.m */; };
+		84D1B7D11C24C15C00FF1FAC /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D1B7CF1C24C15C00FF1FAC /* CocoaAsyncSocket.framework */; };
+		84D1B7D41C24C17500FF1FAC /* libNovocaine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D1B7D31C24C17500FF1FAC /* libNovocaine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0F0CBEBB1C2389F900B2390B /* CocoaAsyncSocket.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		0F0CBE911C2344D400B2390B /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = "../libopus-ios/build/Debug-iphoneos/libopus.a"; sourceTree = "<group>"; };
 		0F0CBEA91C234C4100B2390B /* libNovocaine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNovocaine.a; path = "../novocaine/build/Debug-iphoneos/libNovocaine.a"; sourceTree = "<group>"; };
-		0F0CBEB41C2385FD00B2390B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "../../../../../../../../../../Users/common/Library/Developer/Xcode/DerivedData/fastcast-opus-aynutgjwsctunmbpcebfqpfwflob/Build/Products/Debug-iphoneos/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
 		84139E201C21DCB2003E8DC4 /* fastcast-opus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fastcast-opus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84139E241C21DCB2003E8DC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84139E261C21DCB2003E8DC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +46,12 @@
 		84139E2F1C21DCB2003E8DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84139E321C21DCB2003E8DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84139E341C21DCB2003E8DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844A387D1C24E721001499BA /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
+		844A387E1C24E747001499BA /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		844A38801C252D6F001499BA /* BufferEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BufferEntry.m; sourceTree = "<group>"; };
+		844A38821C252D98001499BA /* BufferEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BufferEntry.h; sourceTree = "<group>"; };
+		84D1B7CF1C24C15C00FF1FAC /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "../CocoaAsyncSocket/build/Debug-iphoneos/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
+		84D1B7D31C24C17500FF1FAC /* libNovocaine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNovocaine.a; path = "../novocaine/build/Debug-iphoneos/libNovocaine.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F0CBEB91C2388E400B2390B /* CocoaAsyncSocket.framework in Frameworks */,
-				0F0CBEAA1C234C4100B2390B /* libNovocaine.a in Frameworks */,
-				0F0CBEBA1C2389F900B2390B /* CocoaAsyncSocket.framework in Frameworks */,
+				84D1B7D41C24C17500FF1FAC /* libNovocaine.a in Frameworks */,
+				84D1B7D11C24C15C00FF1FAC /* CocoaAsyncSocket.framework in Frameworks */,
 				0F0CBE921C2344D400B2390B /* libopus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +71,8 @@
 		84139E171C21DCB1003E8DC4 = {
 			isa = PBXGroup;
 			children = (
-				0F0CBEB41C2385FD00B2390B /* CocoaAsyncSocket.framework */,
+				84D1B7D31C24C17500FF1FAC /* libNovocaine.a */,
+				84D1B7CF1C24C15C00FF1FAC /* CocoaAsyncSocket.framework */,
 				0F0CBEA91C234C4100B2390B /* libNovocaine.a */,
 				0F0CBE911C2344D400B2390B /* libopus.a */,
 				84139E221C21DCB2003E8DC4 /* fastcast-opus */,
@@ -88,7 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				84139E261C21DCB2003E8DC4 /* AppDelegate.h */,
+				844A38821C252D98001499BA /* BufferEntry.h */,
 				84139E271C21DCB2003E8DC4 /* AppDelegate.m */,
+				844A387D1C24E721001499BA /* NSMutableArray+QueueAdditions.h */,
+				844A387E1C24E747001499BA /* NSMutableArray+QueueAdditions.m */,
+				844A38801C252D6F001499BA /* BufferEntry.m */,
 				84139E291C21DCB2003E8DC4 /* ViewController.h */,
 				84139E2A1C21DCB2003E8DC4 /* ViewController.mm */,
 				84139E2C1C21DCB2003E8DC4 /* Main.storyboard */,
@@ -182,6 +190,8 @@
 				84139E2B1C21DCB2003E8DC4 /* ViewController.mm in Sources */,
 				84139E281C21DCB2003E8DC4 /* AppDelegate.m in Sources */,
 				84139E251C21DCB2003E8DC4 /* main.m in Sources */,
+				844A38811C252D6F001499BA /* BufferEntry.m in Sources */,
+				844A387F1C24E747001499BA /* NSMutableArray+QueueAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
