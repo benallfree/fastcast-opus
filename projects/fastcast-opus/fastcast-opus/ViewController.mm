@@ -52,14 +52,18 @@
 - (void) startRecording {
     
     __weak typeof(self)wself = self;
+    NSError *audioSessionError = nil;
+    [[AVAudioSession sharedInstance] setPreferredSampleRate:48000.0 error:&audioSessionError];
     Novocaine *audioManager = [Novocaine audioManager];
-
+    
     // Capture mic input
     [audioManager setInputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels) {
         NSData *d = [NSData dataWithBytes:data length:sizeof(float)*numFrames*numChannels];
         [udpSocket sendData:d withTimeout:TIMEOUT tag:AUDIO_TAG];
     }];
-
+    
+    double sampleRate = [AVAudioSession sharedInstance].sampleRate;
+    
     // Play audio from echo server
     [audioManager setOutputBlock:^(float *outData, UInt32 numFrames, UInt32 numChannels) {
         if([buffers count]==0)
